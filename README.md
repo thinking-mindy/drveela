@@ -1,4 +1,4 @@
-## Hi, i'm Veela😉
+## Hi, i'm DR Veela
 
 - [Try Now](https://thinkingminds.co.zw/health/home)
 
