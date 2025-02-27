@@ -2,6 +2,9 @@
 
 - [Try Now](https://thinkingminds.co.zw/health/home)
 
+## Run with Cargo
+- `cargo shuttle run`
+- Chat with the bot: `curl --json '{"sym":"hey"}' http://127.0.0.1:8000/drveela`
 
 ## Install
 - `coming soon...`
@@ -44,7 +47,7 @@ If you'd like to report a bug then: contact me as follows:
 
 ## Licensing
 
-- Copyright 2024 Thinking Minds LLC (https://thinkingminds.co.zw)
+- Copyright 2025 Thinking Minds LLC (https://thinkingminds.co.zw)
 
 - Licensed under Thinking Minds LLC
 
