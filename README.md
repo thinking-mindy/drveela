@@ -4,7 +4,7 @@
 
 ## Run with Cargo
 - `cargo shuttle run`
-- Chat with the bot: `curl --json '{"sym":"hey"}' http://127.0.0.1:8000/drveela`
+- Send your syms for analysis: `curl --json '{"sym":"hey"}' http://127.0.0.1:8000/drveela`
 
 ## Install
 - `coming soon...`
