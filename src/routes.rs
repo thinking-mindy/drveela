@@ -6,5 +6,5 @@ pub async fn hello_world() -> &'static str {"Access Denied"}
 
 pub async fn drveela(RJson(params):RJson<Value>)->Json<serde_json::Value>{
     let info=drveela::start(params["sym"].to_string()).await;
-    Json(serde_json::json!({"rp":info}))
+    Json(serde_json::json!({"d":info.get("d").unwrap(),"accuracy":info.get("r").unwrap()}))
 }

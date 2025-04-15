@@ -1,4 +1,6 @@
-pub async fn start(data: String) -> String {
+use serde_json::{json, Value};
+
+pub async fn start(data: String) -> Value {
     let drdata = match std::fs::read_to_string("src/data/data.json") {
         Ok(file) => file,
         Err(_) => "None".to_string(),
@@ -41,5 +43,10 @@ pub async fn start(data: String) -> String {
         None => "No match found".to_string(),
     };
 
-    final_result
+    let f_rate = match results.last() {
+        Some(value) => value["rate"].as_i64().unwrap(),
+        None => 0,
+    };
+    let final_rate=(f_rate/mydata.len() as i64)*100;
+    json!({"d":final_result,"r":final_rate})
 }
